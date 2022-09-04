@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <fstream>
 
@@ -13,6 +13,8 @@ int main()
     aplusb_out.open("aplusb.out");
     aplusb_in >> a >> b;
     aplusb_out << a + b;
+    aplusb_out << a - b;
+    
     aplusb_in.close();
     aplusb_out.close();
     return 0;
